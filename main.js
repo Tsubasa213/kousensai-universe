@@ -19,3 +19,4 @@ function init(){
   starry_sky.innerHTML = star;
   }
 window.onload = init;
+
