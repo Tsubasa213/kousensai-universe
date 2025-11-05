@@ -117,12 +117,56 @@ body {
   }
 }
 
+
+/* ↓ここから編集 */
 .title{
   color: white;
   padding-top: 20px;
 }
 
+h2{
+  color: white;
+  padding: 10px 20px 0 20px;
+}
+
 .description{
   color: white;
-  padding: 0 20px;
+  padding: 20px;
+  background: #f98289;
+  border: 4px double #ffffff;
+  border-radius: 15px;
+  font-size: 100%;
 }
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding: 0 10px;
+  }
+
+  .description {
+  color: white;
+  padding: 20px;
+  background: #940108;
+  border: 4px double #ffffff;
+  border-radius: 15px;
+  font-size: 100%;
+  margin: 0 10px;
+  }
+
+  .star.tam1 {
+    width: 0.5px;
+    height: 0.5px;
+  }
+
+  .star.tam2 {
+    width: 1px;
+    height: 1px;
+  }
+
+  .star.tam3 {
+    width: 2px;
+    height: 2px;
+  }
+}
+
