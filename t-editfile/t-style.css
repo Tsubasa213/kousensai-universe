@@ -122,11 +122,25 @@ body {
 .title{
   color: white;
   padding-top: 20px;
+  position: relative;
+  z-index: 10;
 }
 
 h2{
   color: white;
   padding: 10px 20px 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+h3{
+  position: relative;
+  z-index: 10;
+}
+
+ul{
+  position: relative;
+  z-index: 10;
 }
 
 .description{
@@ -136,6 +150,20 @@ h2{
   border: 4px double #ffffff;
   border-radius: 15px;
   font-size: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.subtitle {
+  color: white;
+  padding: 10px 20px 0 20px;
+  position: relative;
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .title {
@@ -146,12 +174,15 @@ h2{
 
   .description {
   color: white;
-  padding: 20px;
+  padding: 0px 20px;
+  
   background: #940108;
   border: 4px double #ffffff;
   border-radius: 15px;
   font-size: 100%;
   margin: 0 10px;
+  position: relative;
+  z-index: 10;
   }
 
   .star.tam1 {
