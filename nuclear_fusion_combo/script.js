@@ -116,7 +116,7 @@ const main = () => {
             let dy = mouse.y - element.y;
             let dist = Math.hypot(dx, dy);
 
-            if (dist < element.size + 10 && element.invincibleTime <= 0) {
+            if (dist < element.size + 15 && element.invincibleTime <= 0) {
                 element.isDragging = true;
             }
         });
@@ -366,11 +366,13 @@ const main = () => {
         drawText("温度: " + Math.floor(temperature) + " K", 20, canvas.height - 50, "20px Arial", "#ffffff");
 
         // 時間描写
-        if (stage <= 6) {
-            drawText("タイム: " + Math.floor(count / 100) + "." + (count % 100).toString().padStart(2, '0') + " 秒", canvas.width - 200, canvas.height - 50, "20px Arial", "#ffffff");
+        let timeText;
+        if (stage < 7) {
+            timeText = "タイム: " + Math.floor(count / 100) + "." + (count % 100).toString().padStart(2, '0') + " 秒";
         } else {
-            drawText("タイム: " + Math.floor(clearCount / 100) + "." + (clearCount % 100).toString().padStart(2, '0') + " 秒", canvas.width - 200, 40, "20px Arial", "#ffffff");
+            timeText = "タイム: " + Math.floor(clearCount / 100) + "." + (clearCount % 100).toString().padStart(2, '0') + " 秒";
         }
+        drawText(timeText, canvas.width - 200, canvas.height - 50, "20px Arial", "#ffffff");
 
         // 温度バー描写
         let maxTemp, tempBarWidth;
